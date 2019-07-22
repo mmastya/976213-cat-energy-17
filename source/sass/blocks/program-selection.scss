@@ -1,0 +1,40 @@
+.program-selection {
+  width: 100%;
+  background-color: white;
+}
+
+.program-selection__header {
+  width: 305px;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.program-selection__intro {
+  font-family: "Oswaldregular", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 36px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.program-selection__slogan {
+  font-family: "Oswaldregular", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.program-selection__selection {
+  width: 280px;
+  background-color: #68b738;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Oswaldregular", "Arial", sans-serif;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}

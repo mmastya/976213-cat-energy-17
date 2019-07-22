@@ -1,0 +1,26 @@
+.example-list {
+  background-color: #f2f2f2;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.example-list__item {
+  margin: 0;
+  padding: 0;
+}
+
+.example-list__parameter {
+  font-family: "Oswaldregular", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.example-list__text {
+  font-family: "Arial Regular", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+}

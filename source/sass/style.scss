@@ -1,0 +1,38 @@
+.body {
+  width: 320px;
+  height: 300px;
+  background-color: #ffffff;
+}
+
+@import "./blocks/page-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/program-selection.scss";
+@import "./blocks/program-selection-list.scss";
+@import "./blocks/example.scss";
+@import "./blocks/example-list.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/advantages-list.scss";
+@import "./blocks/catalog-page-main.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/catalog-list.scss";
+@import "./blocks/catalog-info-list.scss";
+@import "./blocks/button.scss";
+@import "./blocks/additional-goods.scss";
+@import "./blocks/product-list.scss";
+@import "./blocks/info-list.scss";
+
+@font-face {
+  font-family: "Oswaldregular";
+  src: url("../fonts/oswaldregular.woff");
+}
+
+@font-face {
+  font-family: "Oswaldmedium";
+  src: url("../fonts/oswaldmedium.woff");
+}

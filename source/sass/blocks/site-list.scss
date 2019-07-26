@@ -1,6 +1,7 @@
 .site-list {
-  height: 200px;
-  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  background-color: $bc-color;
   font-family: "Oswaldmedium", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
@@ -11,7 +12,14 @@
 }
 
 .site-list__item {
+  width: 184px;
   padding: 20px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+  }
 }

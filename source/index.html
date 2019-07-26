@@ -2,16 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="150" height="38" alt="Кэт энерджи"/>
-      </a>
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="190" height="40" alt="Кэт энерджи"/>
+        </a>
+      </div>
+      <button class="page-header__toggle" type="button">Открыть меню</button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -117,23 +121,25 @@
           </p>
         </div>
         <iframe class="page-footer__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad935344573b7990b2d4b20446213f999b124a9f604c18eccf9e3b054f6c91c68&amp;source=constructor" width="320" height="400" frameborder="0"></iframe>
-        <img class="page-footer__image" src="./img/logo-footer.svg" width="128" height="24" alt="Cat energy"/>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><img src="./img/icon-vk.svg" width="22" height="12" /></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/"><img src="./img/icon-insta.svg" width="16" height="16" /></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><img src="./img/icon-fb.svg" width="10" height="19" /></a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__logo-text" href="https://up.htmlacademy.ru/adaptive">HTML Academy</a>
-          <img class="copyright__logo-image" src="./img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"/>
+        <div class="page-footer__bottom">
+          <img class="page-footer__image" src="./img/logo-footer.svg" width="128" height="24" alt="Cat energy"/>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><img src="./img/icon-vk.svg" width="22" height="12" /></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/"><img src="./img/icon-insta.svg" width="16" height="16" /></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><img src="./img/icon-fb.svg" width="10" height="19" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <a class="copyright__logo-text" href="https://up.htmlacademy.ru/adaptive">HTML Academy</a>
+            <img class="copyright__logo-image" src="./img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"/>
+          </div>
         </div>
       </div>
     </footer>

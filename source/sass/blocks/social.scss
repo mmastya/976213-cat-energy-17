@@ -1,12 +1,14 @@
 .social {
   background-color: #f2f2f2;
-  margin-top: 40px;
+  width: 210px;
+  margin: 0 auto;
 }
 
 .social__list {
   display: flex;
   justify-content: center;
   list-style: none;
+  padding: 0;
 }
 
 .social__item {

@@ -9,7 +9,7 @@
 .program-selection__header {
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 272px 305px;
+  background-size: 320px 305px;
   background-color: $bc-color;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .program-selection__selection {
-  width: 240px;
+  width: 280px;
   background-color: #68b738;
   color: #ffffff;
   font-size: 14px;
@@ -43,14 +43,14 @@
   font-family: "Oswaldregular", "Arial", sans-serif;
   border: none;
   padding: 15px 0;
-  margin: 0 15px;
   text-transform: uppercase;
+  margin: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .program-selection {
-    justify-content: center;
-    min-width: 768px;
+    width: 768px;
+    margin: 0 auto;
   }
 
   .program-selection__header {
@@ -94,13 +94,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .program-selection {
+    width: 1220px;
+  }
+
   .program-selection__header {
     background-image: url("../../img/index-can-desktop@1x.png");
     background-repeat: no-repeat;
     background-size: 492px 455px;
     background-position-y: -18%;
     background-position-x: 57%;
-    width: 1200px;
+    width: 1220px;
   }
 
   .program-selection__selection {

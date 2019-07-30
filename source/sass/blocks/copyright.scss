@@ -1,5 +1,7 @@
 .copyright {
   background-color: #f2f2f2;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .copyright__logo-text {
@@ -8,4 +10,16 @@
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
+  margin-right: 134px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 146px;
+    margin-bottom: 0;
+  }
+
+  .copyright__logo-text {
+    margin-right: 0;
+  }
 }

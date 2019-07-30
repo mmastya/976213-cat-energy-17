@@ -1,4 +1,18 @@
 .page-main {
+  display: flex;
+  flex-direction: column;
   width: 320px;
-  background-color: white;
+  background-color: $bc-color;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: 1440px;
+  }
 }

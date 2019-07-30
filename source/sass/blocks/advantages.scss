@@ -1,10 +1,25 @@
 .advantages {
+  width: 280px;
+  margin: 0 auto;
   background-color: white;
 }
 
 .advantages__title {
+  width: 280px;
   color: #111111;
   font-family: "Oswaldregular", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 1220px;
+  }
 }

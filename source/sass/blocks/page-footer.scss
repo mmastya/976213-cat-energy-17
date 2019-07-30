@@ -1,4 +1,40 @@
 .page-footer {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   background-color: #f2f2f2;
+}
+
+.page-footer__map {
+  width: 100%;
+}
+
+.page-footer__bottom {
+  width: 320px;
+}
+
+.page-footer__bottom-logo {
+  display: block;
+  margin: 0 auto;
+  width: 128px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 100%;
+  }
+
+  .page-footer__bottom {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    background-color: #f2f2f2;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 100%;
+  }
 }

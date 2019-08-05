@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Oswaldregular";
+  src: url("../fonts/oswaldregular.woff");
+}
+
+@font-face {
+  font-family: "Oswaldmedium";
+  src: url("../fonts/oswaldmedium.woff");
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  background-color: $bc-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

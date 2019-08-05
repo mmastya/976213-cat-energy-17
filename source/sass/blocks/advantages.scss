@@ -10,16 +10,29 @@
   font-family: "Oswaldregular", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
+  margin-top: 35px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
     width: 708px;
   }
+
+  .advantages__title {
+    width: 375px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 75px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .advantages {
     width: 1220px;
+  }
+
+  .advantages__title {
+    margin-bottom: 80px;
   }
 }

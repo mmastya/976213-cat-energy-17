@@ -21,6 +21,7 @@
   line-height: 18px;
   width: 200px;
   margin: 0;
+  margin-top: 2px;
 }
 
 .advantages-list__image {
@@ -46,7 +47,7 @@
     flex-direction: column;
     width: 324px;
     margin-right: 60px;
-    margin-bottom: 90px;
+    margin-bottom: 85px;
   }
 
   .advantages-list__item:nth-child(2),
@@ -67,7 +68,7 @@
     display: block;
     background-color: #68b738;
     margin-right: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 
   .advantages-list__number {

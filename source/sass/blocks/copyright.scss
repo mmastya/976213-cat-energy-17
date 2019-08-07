@@ -30,3 +30,16 @@
     margin-right: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    width: 163px;
+  }
+
+  .copyright__logo-image {
+    margin-left: 62px;
+    display: block;
+    width: 42px;
+    height: 41px;
+  }
+}

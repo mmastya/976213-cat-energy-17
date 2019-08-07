@@ -7,9 +7,14 @@
 }
 
 .program-selection__header {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .program-selection__intro {
@@ -19,7 +24,7 @@
   line-height: 36px;
   text-align: center;
   width: 250px;
-  margin: 25px auto;
+  margin: 28px auto;
 }
 
 .program-selection__slogan {
@@ -46,39 +51,36 @@
   line-height: 18px;
   font-family: "Oswaldregular", "Arial", sans-serif;
   border: none;
-  padding: 15px 0;
+  padding: 12px 0;
   text-transform: uppercase;
   margin: 0 20px;
 }
 
+
 @media (min-width: $tablet-width) {
   .program-selection {
     width: 768px;
-    margin-bottom: 20px;
+    margin-bottom: 9px;
+  }
+
+  .program-selection__header-white {
+    position: relative;
   }
 
   .program-selection__header {
-    background-image: url("../img/index-can-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 709px 609px;
-    background-position-y: 93%;
-    height: 764px;
-    margin: 0 auto;
-    width: 708px;
-  }
-
-  .program-selection__image {
-    display: none;
+    background-image: none;
+    margin-bottom: 0;
   }
 
   .program-selection__intro {
-    font-size: 55px;
-    line-height: 55px;
+    font-size: 59px;
+    line-height: 58px;
     color: #111111;
-    margin-bottom: 50px;
+    margin-bottom: 42px;
     width: 415px;
     text-align: left;
-    margin-left: 90px;
+    margin-left: 118px;
+    margin-top: 35px;
   }
 
   .program-selection__slogan {
@@ -88,20 +90,31 @@
     line-height: 20px;
     text-align: left;
     width: 283px;
-    margin-left: 90px;
+    margin-left: 118px;
     margin-right: 0;
   }
 
   .program-selection__selection {
+    left: 28px;
     width: 246px;
     margin-left: 90px;
     margin-right: 0;
+    font-size: 20px;
+    position: absolute;
+    top: 225px;
+  }
+
+  .program-selection__image {
+    width: 709px;
+    height: auto;
+    margin-top: -30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .program-selection {
     width: 1220px;
+    margin-bottom: 38px;
   }
 
   .program-selection__header {
@@ -113,6 +126,7 @@
     width: 100vw;
     height: 696px;
     background: none;
+    margin-bottom: 0;
   }
 
   .program-selection__header-white {
@@ -127,36 +141,45 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: 720px 696px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
   }
 
   .program-selection__selection {
     position: absolute;
+    font-size: 20px;
     width: 245px;
     margin-left: 0;
-    right: 285px;
-    bottom: 190px;
+    height: 50px;
+    top: 457px;
+    left: auto;
+    right: 287px;
   }
 
   .program-selection__image {
+    width: 552px;
     position: absolute;
     display: block;
     order: 1;
     margin: 0;
-    right: -215px;
-    bottom: 114px;
+    right: -392px;
+    bottom: 57px;
   }
 
   .program-selection__intro {
     position: absolute;
     margin: 0;
-    right: 128px;
-    top: 160px;
+    right: 114px;
+    top: 228px;
   }
 
   .program-selection__slogan {
     position: absolute;
     margin-left: 0;
-    right: 248px;
-    bottom: 295px;
+    right: 247px;
+    bottom: 242px;
   }
 }

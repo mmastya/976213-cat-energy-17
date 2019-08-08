@@ -1,7 +1,7 @@
 .catalog-info-list {
   width: 140px;
-  margin-left: 136px;
-  margin-top: -87px;
+  margin-left: 157px;
+  margin-top: -73px;
   background-color: #ffffff;
 }
 
@@ -27,7 +27,7 @@
     width: 249px;
     margin: 0;
     background-color: #f2f2f2;
-    margin-bottom: 33px;
+    margin-bottom: 29px;
   }
 
   .catalog-info__name {
@@ -45,7 +45,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog-info-list {
-    margin-top: 30px;
+    margin-top: 0;
     width: 170px;
   }
 }

@@ -9,13 +9,13 @@
   flex-direction: column;
   background-color: $bc-color;
   margin: 0 auto;
-  margin-top: 15px;
 }
 
 .page-header__logo-wrapper {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
+  margin-top: 11px;
 }
 
 .page-header__logo {
@@ -26,7 +26,7 @@
   .page-header {
     width: 768px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 18px;
   }
 
   .page-header__wrapper {
@@ -57,10 +57,20 @@
   }
 
   .page-header__logo-wrapper {
-    margin-top: 50px;
+    margin-top: 48px;
+    width: 202px;
   }
 
   .page-header__wrapper {
     width: 1220px;
+  }
+
+  .page-header__logo {
+    width: 202px;
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
   }
 }

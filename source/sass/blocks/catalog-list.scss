@@ -25,11 +25,12 @@
 
 .catalog-list__image {
   display: block;
+  margin-left: 20px;
 }
 
 .catalog-list__button {
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .catalog-list__title-name {
@@ -38,8 +39,8 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
-  height: 20px;
-  margin-top: 25px;
+  width: 91px;
+  margin-top: 22px;
 }
 
 .catalog-list__title-more {
@@ -50,18 +51,18 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-top: 25px;
+  margin-top: 19px;
 }
 
 .catalog-list__text-more {
   font-family: "Arial Regular", "Arial", sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 16px;
   color: #444444;
   margin: 0;
   padding: 0;
-  margin-top: 15px;
-  margin-bottom: 25px;
+  margin-top: 8px;
+  margin-bottom: 21px;
 }
 
 .catalog-list__button-more {
@@ -71,7 +72,7 @@
   border: none;
   margin: 0 auto;
   padding: 0;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-bottom: 13px;
   background-color: #f2f2f2;
   color: #444444;
@@ -79,7 +80,7 @@
   text-transform: uppercase;
   padding-left: 97px;
   padding-right: 94px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .catalog-list__image-more {
@@ -98,7 +99,7 @@
     align-items: center;
     width: 324px;
     margin-right: 60px;
-    margin-top: 140px;
+    margin-bottom: 141px;
     border: none;
     background-color: #f2f2f2;
 
@@ -110,12 +111,13 @@
 
   .catalog-list__image-more {
     margin-top: 55px;
+    width: 55px;
   }
 
   .catalog-list__title-more {
     width: 135px;
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 47px;
     text-align: center;
   }
 
@@ -123,8 +125,8 @@
     width: 168px;
     font-size: 16px;
     line-height: auto;
-    margin-top: 30px;
-    margin-bottom: 85px;
+    margin-top: 27px;
+    margin-bottom: 89px;
     text-align: center;
   }
 
@@ -137,18 +139,38 @@
   }
 
   .catalog-list__image {
-    margin-top: -85px;
+    margin-top: -47px;
+    margin-left: 0;
+
+    &--small-size {
+      width: 318px;
+      height: 172px;
+    }
+
+    &--big-size {
+      width: 319px;
+      height: 208px;
+      margin-top: -83px;
+    }
   }
 
   .catalog-list__title-name {
     width: 130px;
     font-size: 20px;
-    margin-top: 120px;
+    margin-top: 37px;
     text-align: center;
   }
 
   .catalog-list__button {
     width: 249px;
+    margin-bottom: 40px;
+  }
+
+  .catalog-list__button-more {
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 78px;
+    margin-bottom: 20px;
   }
 }
 
@@ -162,7 +184,7 @@
   .catalog-list__item {
     width: 245px;
     margin-right: 80px;
-    margin-top: 170px;
+    margin-top: 0;
 
     &--more-item {
       width: 242px;

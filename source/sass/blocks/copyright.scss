@@ -1,11 +1,13 @@
 .copyright {
-  display: flex;
-  justify-content: space-between;
   background-color: #f2f2f2;
   width: 280px;
   margin: 0 auto;
   height: 78px;
-  align-items: center;
+}
+
+.copyright__logo {
+  display: flex;
+  text-decoration: none;
 }
 
 .copyright__logo-text {
@@ -13,33 +15,57 @@
   color: #444444;
   font-size: 16px;
   line-height: 16px;
-  text-decoration: none;
+  padding-top: 14px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__logo-image {
-  display: block;
+  padding-top: 22px;
+  margin-left: 130px;
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .copyright {
-    width: 146px;
+    width: 166px;
     margin: 0;
   }
 
   .copyright__logo-text {
     margin-right: 0;
   }
+
+  .copyright__logo-image {
+    padding-top: 18px;
+    margin-left: 14px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .copyright {
-    width: 163px;
+    width: 186px;
+  }
+
+  .copyright__logo-text {
+    margin-right: 0;
+    margin-left: 23px;
   }
 
   .copyright__logo-image {
-    margin-left: 62px;
     display: block;
-    width: 42px;
-    height: 41px;
+    width: 33px;
+    height: 46px;
   }
 }

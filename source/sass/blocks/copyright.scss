@@ -1,8 +1,8 @@
 .copyright {
-  background-color: #f2f2f2;
-  width: 280px;
-  margin: 0 auto;
   height: 78px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f2f2f2;
 }
 
 .copyright__logo {
@@ -11,20 +11,20 @@
 }
 
 .copyright__logo-text {
-  font-family: "Arial Regular", "Arial", sans-serif;
-  color: #444444;
+  padding-top: 14px;
   font-size: 16px;
   line-height: 16px;
-  padding-top: 14px;
+  font-family: "Arial Regular", "Arial", sans-serif;
+  color: #444444;
 
   &:active {
-    opacity: 0.3;
+    color: #c8c8c8;
   }
 }
 
 .copyright__logo-image {
-  padding-top: 22px;
   margin-left: 130px;
+  padding-top: 22px;
   fill: #666666;
 
   &:hover {
@@ -32,7 +32,7 @@
   }
 
   &:active {
-    opacity: 0.3;
+    fill: #c8e0ba;
   }
 }
 
@@ -48,8 +48,8 @@
   }
 
   .copyright__logo-image {
-    padding-top: 18px;
     margin-left: 14px;
+    padding-top: 18px;
   }
 }
 

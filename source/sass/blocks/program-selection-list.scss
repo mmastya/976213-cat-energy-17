@@ -1,18 +1,18 @@
 .program-selection-list {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: $bc-color;
-  width: 280px;
   list-style: none;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .program-selection-list__item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
   width: 280px;
-  background-color: #f2f2f2;
   margin-bottom: 20px;
+  background-color: #f2f2f2;
 }
 
 .program-selection-list__item:last-child {
@@ -22,73 +22,72 @@
 .program-selection-list__image {
   display: block;
   margin-left: 20px;
-  background-image: url("../../img/Ellipse\ 1\ copy\ 2.svg");
-  background-size: 50px 50px;
-  background-repeat: no-repeat;
-  background-position: 100%;
 
   &--pro-size {
     width: 67px;
     height: 94px;
-    margin-left: 13px;
-    background-position: 100%;
-    background-position-x: 9px;
+    margin-left: 12px;
   }
 
   &--slim-size {
     width: 51px;
     height: 52px;
-    margin-left: 19px;
+    margin-left: 21px;
     margin-top: 21px;
   }
 }
 
 .program-selection-list__name {
-  color: #111111;
-  font-family: "Oswaldregular", "Arial", sans-serif;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  margin-left: 26px;
   margin-top: 29px;
   margin-bottom: 29px;
+  font-size: 24px;
+  line-height: 37px;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #111111;
+
+  &--pro-size {
+    margin-left: 11px;
+  }
+
+  &--slim-size {
+    margin-left: 18px;
+  }
 }
 
 .program-selection-list__promo {
   width: 240px;
-  color: #444444;
-  font-family: "Arial Regular", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
   margin: 0 auto;
   padding-bottom: 22px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial Regular", "Arial", sans-serif;
+  color: #444444;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .program-selection-list__toggle {
+  text-align: left;
   width: 240px;
   height: 16px;
   padding: 0;
-  border: none;
-  background-image: url("../img/icon-right-arrow-long.svg");
-  background-size: 24px 11px;
-  background-repeat: no-repeat;
-  color: #111111;
-  font-family: "Oswaldregular", "Arial", sans-serif;
+  padding-top: 11px;
+  padding-left: 19px;
+  padding-bottom: 31px;
   font-size: 16px;
   line-height: 16px;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  color: #111111;
   text-transform: uppercase;
-  background-position-x: 100px;
-  text-align: left;
-  margin-left: 19px;
-  margin-top: 19px;
-  margin-bottom: 23px;
-  background-color: transparent;
+  border: none;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
   .program-selection-list {
     width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .program-selection-list__item {
@@ -97,67 +96,77 @@
   }
 
   .program-selection-list__image {
+    order: 2;
     width: 200px;
     height: 212px;
-    order: 2;
-    margin-top: -240px;
+    margin-top: -210px;
     margin-left: 97px;
-    background-size: 200px 200px;
 
     &--pro-size {
       width: 268px;
       height: 283px;
       margin-left: 10px;
-      background-position-x: 36px;
     }
 
     &--slim-size {
-      width: 208px;
+      width: 197px;
       height: 253px;
-      margin-left: 74px;
+      margin-left: 45px;
     }
   }
 
   .program-selection-list__name {
+    order: -1;
     width: 370px;
+    margin: 0;
+    padding-top: 74px;
+    padding-left: 53px;
+    padding-bottom: 26px;
     font-size: 36px;
     line-height: 37px;
-    order: -1;
-    margin-left: 53px;
-    margin-top: 76px;
-    margin-bottom: 25px;
   }
 
   .program-selection-list__promo {
-    width: 344px;
+    order: 0;
+    width: 375px;
+    margin: 0;
+    padding-left: 52px;
+    padding-bottom: 42px;
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 0;
     border-bottom: none;
-    order: 0;
-    margin-left: 52px;
-    margin-bottom: 56px;
+
+    &--pro-size {
+      width: 344px;
+    }
   }
 
   .program-selection-list__toggle {
+    order: 1;
     width: 350px;
     height: 20px;
-    background-position-x: 123px;
-    background-position-y: 4px;
+    margin: 0;
+    padding-left: 52px;
+    padding-bottom: 65px;
     font-size: 20px;
     line-height: 20px;
-    order: 1;
-    margin-left: 52px;
-    margin-bottom: 62px;
-    margin-top: 0;
+  }
+
+  .program-selection-list__toggle-slim {
+    margin-left: 13px;
+  }
+
+  .program-selection-list__toggle-pro {
+    margin-left: 11px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .program-selection-list {
-    width: 1220px;
     display: flex;
+    width: 1220px;
     margin-top: 637px;
+    padding: 0;
   }
 
   .program-selection-list__item {
@@ -172,54 +181,66 @@
 
   .program-selection-list__name {
     width: 250px;
+    margin: 0;
+    padding-bottom: 26px;
     font-size: 36px;
-    margin-top: 77px;
-    margin-bottom: 0;
-    margin-left: 0;
+
+    &--slim-size {
+      padding-top: 77px;
+      padding-left: 63px;
+    }
+
+    &--pro-size {
+      padding-top: 77px;
+      padding-left: 46px;
+    }
   }
 
   .program-selection-list__promo {
     width: 462px;
+    margin: 0;
+    padding-left: 53px;
+    padding-top: 35px;
+    padding-bottom: 16px;
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
-    margin: 0;
-    margin-left: 52px;
-    margin-top: 43px;
   }
 
   .program-selection-list__toggle {
     height: 20px;
+    margin: 0;
+    padding-left: 52px;
+    padding-bottom: 67px;
     font-size: 20px;
     line-height: 20px;
-    margin: 0;
-    background-position-x: 126px;
-    background-position-y: 5px;
-    margin-left: 52px;
-    margin-bottom: 64px;
-    margin-top: 5px;
+  }
+
+  .program-selection-list__toggle-slim {
+    margin-left: 13px;
+  }
+
+  .program-selection-list__toggle-pro {
+    margin-left: 11px;
   }
 
   .program-selection-list__image {
-    margin-left: 50px;
     width: 100px;
     height: 105px;
+    margin-left: 50px;
     margin-top: 40px;
-    margin-right: 65px;
-    background-size: 100px 100px;
 
     &--pro-size {
       width: 134px;
       height: 117px;
       margin-left: 34px;
-      background-position-x: 18px;
+      margin-top: 36px;
     }
 
     &--slim-size {
       width: 101px;
       height: 111px;
       margin-left: 50px;
-      background-position-y: 8px;
     }
   }
 }

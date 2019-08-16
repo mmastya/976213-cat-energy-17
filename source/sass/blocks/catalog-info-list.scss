@@ -6,28 +6,28 @@
 }
 
 .catalog-info__name {
-  font-family: "Arial Regular", "Arial", sans-serif;
+  text-align: left;
   font-size: 12px;
   line-height: 16px;
+  font-family: "Arial Regular", "Arial", sans-serif;
   color: #444444;
-  text-align: left;
 }
 
 .catalog-info__field {
-  font-family: "Arial Regular", "Arial", sans-serif;
+  text-align: right;
   font-size: 12px;
   line-height: 16px;
+  font-family: "Arial Regular", "Arial", sans-serif;
   color: #444444;
-  text-align: right;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-info-list {
-    border-collapse: collapse;
     width: 249px;
     margin: 0;
-    background-color: #f2f2f2;
     margin-bottom: 29px;
+    background-color: #f2f2f2;
+    border-collapse: collapse;
   }
 
   .catalog-info__name {
@@ -45,7 +45,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog-info-list {
-    margin-top: 0;
     width: 170px;
+    margin-top: 0;
   }
 }

@@ -1,12 +1,11 @@
 .advantages-list {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
   background-color: white;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 280px;
-  margin-bottom: 22px;
 }
 
 .advantages-list__item {
@@ -15,21 +14,21 @@
 }
 
 .advantages-list__description {
-  font-family: "Arial Regular", "Arial", sans-serif;
-  color: #444444;
-  font-size: 14px;
-  line-height: 18px;
   width: 200px;
   margin: 0;
   margin-top: 2px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial Regular", "Arial", sans-serif;
+  color: #444444;
 }
 
 .advantages-list__image {
+  display: block;
   width: 60px;
   height: 60px;
-  display: block;
-  background-color: #68b738;
   margin-right: 20px;
+  background-color: #68b738;
 }
 
 .advantages-list__number {
@@ -38,16 +37,16 @@
 
 @media (min-width: $tablet-width) {
   .advantages-list {
-    width: 708px;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 708px;
   }
 
   .advantages-list__item {
     flex-direction: column;
     width: 324px;
     margin-right: 60px;
-    margin-bottom: 85px;
+    margin-bottom: 75px;
   }
 
   .advantages-list__item:nth-child(2),
@@ -56,39 +55,40 @@
   }
 
   .advantages-list__description {
+    z-index: 2;
+    width: 264px;
+    margin: 0;
     font-size: 16px;
     line-height: 24px;
-    width: 222px;
-    z-index: 2;
   }
 
   .advantages-list__image {
+    display: block;
     width: 80px;
     height: 80px;
-    display: block;
-    background-color: #68b738;
     margin-right: 20px;
     margin-bottom: 32px;
+    background-color: #68b738;
   }
 
   .advantages-list__number {
+    z-index: 1;
+    align-self: center;
     visibility: visible;
-    color: #f2f2f2;
-    font-family: "Oswaldregular", "Arial", sans-serif;
+    margin-top: -224px;
+    margin-left: 35px;
     font-size: 281px;
     line-height: 281px;
-    align-self: center;
-    margin-top: -233px;
-    z-index: 1;
-    margin-left: 12px;
+    font-family: "Oswald Regular", "Arial", sans-serif;
+    color: #f2f2f2;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages-list {
-    width: 1220px;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 1220px;
   }
 
   .advantages-list__item {
@@ -106,9 +106,9 @@
   }
 
   .advantages-list__description {
+    width: 245px;
     font-size: 16px;
     line-height: 24px;
-    width: 245px;
   }
 
   .advantages-list__number {

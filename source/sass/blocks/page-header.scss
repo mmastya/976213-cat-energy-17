@@ -4,11 +4,11 @@
 }
 
 .page-header__wrapper {
-  width: 320px;
   display: flex;
   flex-direction: column;
-  background-color: $bc-color;
+  width: 320px;
   margin: 0 auto;
+  background-color: $bc-color;
 }
 
 .page-header__logo-wrapper {
@@ -22,6 +22,18 @@
   width: 190px;
 }
 
+.page-header__logo-image {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     width: 768px;
@@ -30,9 +42,9 @@
   }
 
   .page-header__wrapper {
-    width: 708px;
     flex-direction: row;
     justify-content: space-between;
+    width: 708px;
     margin-bottom: 15px;
     margin-top: 0;
   }

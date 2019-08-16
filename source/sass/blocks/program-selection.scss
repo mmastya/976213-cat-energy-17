@@ -1,9 +1,7 @@
 .program-selection {
   display: flex;
   flex-direction: column;
-  width: 320px;
   background-color: white;
-  margin: 0 auto;
 }
 
 .program-selection__header {
@@ -18,24 +16,25 @@
 }
 
 .program-selection__intro {
-  font-family: "Oswaldregular", "Arial", sans-serif;
-  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding-top: 27px;
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
-  width: 250px;
-  margin: 28px auto;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  color: #ffffff;
 }
 
 .program-selection__slogan {
-  font-family: "Oswaldregular", "Arial", sans-serif;
-  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 28px;
   font-size: 14px;
   line-height: 14px;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  color: #ffffff;
   text-transform: uppercase;
-  text-align: center;
-  width: 200px;
-  margin: 25px auto;
 }
 
 .program-selection__image {
@@ -45,22 +44,29 @@
 
 .program-selection__selection {
   width: 280px;
-  background-color: #68b738;
-  color: #ffffff;
+  margin: 0 20px;
+  padding: 12px 0;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Oswaldregular", "Arial", sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #68b738;
   border: none;
-  padding: 12px 0;
   text-transform: uppercase;
-  margin: 0 20px;
-}
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #8fc46e;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .program-selection {
     width: 768px;
-    margin-bottom: 9px;
+    margin-bottom: 29px;
   }
 
   .program-selection__header-white {
@@ -68,65 +74,67 @@
   }
 
   .program-selection__header {
-    background-image: none;
     margin-bottom: 0;
+    background-image: none;
   }
 
   .program-selection__intro {
-    font-size: 59px;
-    line-height: 58px;
-    color: #111111;
-    margin-bottom: 42px;
     width: 415px;
     text-align: left;
     margin-left: 118px;
-    margin-top: 35px;
+    padding-top: 36px;
+    font-size: 59px;
+    line-height: 58px;
+    color: #111111;
   }
 
   .program-selection__slogan {
-    color: #111111;
-    margin-bottom: 50px;
-    font-size: 20px;
-    line-height: 20px;
     text-align: left;
     width: 283px;
     margin-left: 118px;
     margin-right: 0;
+    padding-top: 42px;
+    padding-bottom: 69px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
   }
 
   .program-selection__selection {
+    position: absolute;
+    top: 261px;
     left: 28px;
     width: 246px;
     margin-left: 90px;
     margin-right: 0;
+    padding: 17px 0;
     font-size: 20px;
-    position: absolute;
-    top: 225px;
   }
 
   .program-selection__image {
-    width: 709px;
+    width: 712px;
     height: auto;
-    margin-top: -30px;
+    margin-top: -50px;
+    margin-left: 27px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .program-selection {
     width: 1220px;
-    margin-bottom: 38px;
+    margin-bottom: 73px;
   }
 
   .program-selection__header {
-    display: flex;
-    flex-flow: row nowrap;
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    flex-flow: row nowrap;
     width: 100vw;
     height: 696px;
-    background: none;
     margin-bottom: 0;
+    background: none;
   }
 
   .program-selection__header-white {
@@ -150,36 +158,38 @@
 
   .program-selection__selection {
     position: absolute;
-    font-size: 20px;
-    width: 245px;
-    margin-left: 0;
-    height: 50px;
     top: 457px;
     left: auto;
     right: 287px;
+    width: 245px;
+    height: 50px;
+    margin-left: 0;
+    font-size: 20px;
   }
 
   .program-selection__image {
-    width: 552px;
     position: absolute;
-    display: block;
-    order: 1;
-    margin: 0;
     right: -392px;
     bottom: 57px;
+    display: block;
+    order: 1;
+    width: 552px;
+    margin: 0;
   }
 
   .program-selection__intro {
     position: absolute;
-    margin: 0;
     right: 114px;
-    top: 228px;
+    top: 224px;
+    margin: 0;
+    padding: 0;
   }
 
   .program-selection__slogan {
     position: absolute;
-    margin-left: 0;
     right: 247px;
-    bottom: 242px;
+    bottom: 293px;
+    margin-left: 0;
+    padding: 0;
   }
 }

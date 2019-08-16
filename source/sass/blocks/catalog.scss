@@ -1,21 +1,21 @@
 .catalog {
   width: 320px;
-  background-color: #ffffff;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .catalog__title {
   width: 280px;
+  margin: 0;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 15px;
   padding-bottom: 28px;
-  margin: 0;
-  border-top: 1px solid #e6e6e6;
-  font-family: "Oswaldregular", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   color: #111111;
+  border-top: 1px solid #e6e6e6;
 }
 
 @media (min-width: $tablet-width) {
@@ -25,13 +25,13 @@
 
   .catalog__title {
     width: 708px;
-    padding: 0;
     margin: 0;
-    border-top: none;
+    margin-top: 48px;
+    padding: 0;
+    margin-bottom: 165px;
     font-size: 60px;
     line-height: 60px;
-    margin-top: 48px;
-    margin-bottom: 165px;
+    border-top: none;
   }
 }
 

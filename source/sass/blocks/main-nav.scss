@@ -46,6 +46,10 @@
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {

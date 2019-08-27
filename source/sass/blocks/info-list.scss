@@ -1,4 +1,7 @@
 .info-list {
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 12px;
   background-color: white;
 }
 
@@ -7,6 +10,7 @@
   line-height: 14px;
   font-family: "Arial Regular", "Arial", sans-serif;
   color: #444444;
+  text-align: left;
 }
 
 .info-list__cost {
@@ -14,4 +18,49 @@
   line-height: 14px;
   font-family: "Arial Regular", "Arial", sans-serif;
   color: #444444;
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .info-list {
+    width: 672px;
+    margin-top: -31px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    padding-left: 442px;
+  }
+
+  .info-list__count {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .info-list__cost {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info-list {
+    width: 292px;
+    margin-top: 12px;
+    padding-top: 13px;
+    padding-bottom: 20px;
+    padding-left: 162px;
+  }
+
+  .info-list__count {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .info-list__cost {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
 }

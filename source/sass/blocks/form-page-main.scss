@@ -1,0 +1,16 @@
+.form-page-main {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page-main {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-page-main {
+    width: 1220px;
+  }
+}

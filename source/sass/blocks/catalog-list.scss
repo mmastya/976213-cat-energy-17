@@ -111,8 +111,13 @@
     background-color: #f2f2f2;
     border: none;
 
+    &:nth-child(7) {
+      margin-bottom: 0;
+    }
+
     &--more-item {
       width: 322px;
+      margin-bottom: 0;
       background-color: #ffffff;
     }
   }
@@ -193,6 +198,11 @@
     width: 245px;
     margin-right: 80px;
     margin-top: 0;
+
+    &:nth-child(6),
+    &:nth-child(5) {
+      margin-bottom: 0;
+    }
 
     &--more-item {
       width: 242px;

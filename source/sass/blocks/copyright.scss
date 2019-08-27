@@ -8,6 +8,11 @@
 .copyright__logo {
   display: flex;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.copyright__logo .copyright__logo-text:active {
+  color: #c8c8c8;
 }
 
 .copyright__logo-text {
@@ -16,10 +21,6 @@
   line-height: 16px;
   font-family: "Arial Regular", "Arial", sans-serif;
   color: #444444;
-
-  &:active {
-    color: #c8c8c8;
-  }
 }
 
 .copyright__logo-image {
@@ -41,6 +42,7 @@
   .copyright {
     width: 166px;
     margin: 0;
+    padding: 0;
   }
 
   .copyright__logo-text {

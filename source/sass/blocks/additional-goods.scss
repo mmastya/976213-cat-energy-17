@@ -1,26 +1,187 @@
 .additional-goods {
+  width: 320px;
+  margin: 0 auto;
   background-color: #ffffff;
 }
 
 .additional-goods__title {
-  margin-top: 55px;
+  position: relative;
+  margin: 0;
+  padding-top: 29px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 33px;
   font-size: 24px;
   line-height: 24px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   color: #111111;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 43px;
+    right: 0;
+    width: 53px;
+    height: 3px;
+    background-color: #68b738;
+  }
 }
 
 .additional-goods__gift {
-  height: 290px;
-  margin-top: 40px;
-  background-color: #5b9f32;
+  width: 280px;
+  margin: 0;
+  padding-left: 20px;
+  margin-bottom: 35px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: 280px 290px;
+  background-position-x: 20px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
+}
+
+.additional-goods__gift-image {
+  padding-left: 113px;
+  padding-top: 66px;
 }
 
 .additional-goods__gift-promo {
+  width: 160px;
+  text-align: center;
+  margin: 0;
+  padding-left: 65px;
+  padding-top: 42px;
+  padding-bottom: 58px;
   font-size: 16px;
   line-height: 20px;
   font-family: "Arial Regular", "Arial", sans-serif;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-goods {
+    width: 768px;
+  }
+
+  .additional-goods__title {
+    padding-top: 68px;
+    padding-left: 67px;
+    padding-bottom: 81px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      top: 91px;
+      right: 0;
+      width: 327px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 91px;
+      left: 0;
+      width: 28px;
+      height: 3px;
+      background-color: #68b738;
+    }
+  }
+
+  .additional-goods__gift {
+    display: flex;
+    width: 708px;
+    padding-left: 30px;
+    margin-bottom: 73px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-size: 708px 200px;
+    background-position-x: 30px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px auto;
+    }
+  }
+
+  .additional-goods__gift-image {
+    margin-top: 66px;
+    padding-left: 91px;
+    padding-top: 0;
+    padding-bottom: 70px;
+  }
+
+  .additional-goods__gift-promo {
+    width: 160px;
+    text-align: left;
+    padding-left: 277px;
+    padding-top: 72px;
+  }
+
+  .additional-goods__button {
+    margin-left: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-goods {
+    width: 1220px;
+  }
+
+  .additional-goods__title {
+    padding-top: 78px;
+    padding-left: 0;
+    padding-bottom: 81px;
+
+    &::after {
+      top: 100px;
+      right: -110px;
+      width: 958px;
+    }
+
+    &::before {
+      top: 100px;
+      left: -110px;
+      width: 70px;
+    }
+  }
+
+  .additional-goods__gift {
+    flex-direction: column;
+    width: 273px;
+    padding-left: 0;
+    margin-bottom: 88px;
+    margin-top: -359px;
+    margin-left: 946px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-size: 245px 290px;
+    background-position-x: 30px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
+  }
+
+  .additional-goods__gift-image {
+    margin-top: 65px;
+    padding-left: 125px;
+    padding-top: 0;
+    padding-bottom: 63px;
+  }
+
+  .additional-goods__gift-promo {
+    width: 160px;
+    text-align: center;
+    padding-left: 79px;
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+
+  .additional-goods__button {
+    margin-left: 36px;
+    margin-top: 14px;
+    margin-bottom: 17px;
+  }
 }

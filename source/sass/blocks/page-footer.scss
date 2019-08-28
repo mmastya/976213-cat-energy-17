@@ -7,7 +7,14 @@
 }
 
 .page-footer__map {
+  position: relative;
   width: 100%;
+  border: none;
+}
+
+.page-footer__bottom {
+  display: flex;
+  flex-direction: column;
 }
 
 .page-footer__bottom-logo {
@@ -36,12 +43,14 @@
 
   .page-footer__bottom {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 38px;
+    padding-top: 32px;
     width: 708px;
-    height: 150px;
     background-color: #f2f2f2;
   }
 
@@ -62,7 +71,7 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     position: relative;
-    width: 100%;
+    width: 1440px;
   }
 
   .page-footer__contacts {
@@ -73,7 +82,7 @@
 
   .page-footer__bottom {
     width: 1220px;
-    height: 150px;
+    margin: 0 auto;
     padding-left: 110px;
     padding-right: 110px;
   }

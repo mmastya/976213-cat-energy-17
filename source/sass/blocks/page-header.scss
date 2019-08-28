@@ -1,6 +1,5 @@
 .page-header {
-  width: 320px;
-  margin: 0 auto;
+  position: relative;
 }
 
 .page-header__wrapper {
@@ -8,7 +7,6 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
-  background-color: $bc-color;
 }
 
 .page-header__logo-wrapper {
@@ -36,8 +34,6 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: 768px;
-    margin: 0 auto;
     margin-top: 18px;
   }
 
@@ -64,9 +60,32 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: 1220px;
     margin-top: 0;
+
+    &--bc-green-desktop {
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        z-index: -1;
+        width: 50%;
+        min-height: 696px;
+        top: 0;
+        right: 0;
+        left: inherit;
+        background-image: url(../img/index-background-desktop@1x.jpg);
+        background-color: #63a73a;
+        background-position: 0%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/index-background-desktop@2x.jpg");
+          background-size: 720px auto;
+      }
+    }
   }
+}
 
   .page-header__logo-wrapper {
     margin-top: 48px;

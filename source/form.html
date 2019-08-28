@@ -41,26 +41,26 @@
     </header>
     <main class="form-page-main">
       <section class="questionnaire">
-        <p class="questionnaire__title">Подбор программы</p>
+        <h2 class="questionnaire__title">Подбор программы</h2>
         <p class="questionnaire__intro">заполните анкету и мы подберем программу питания для вашего кота</p>
-        <form class="cat-info" action="#" method="get">
+        <form class="cat-info" action="https://echo.htmlacademy.ru" method="post">
           <ul class="cat-info__list">
             <li class="cat-info__list-item">
               <label class="cat-info__cat-text cat-info__cat-text--name" for="id-name">Имя:*</label>
-              <input class="cat-info__cat-box cat-info__cat-box--name" id="id-name" name="name" type="text" placeholder="барсик">
+              <input class="cat-info__cat-box cat-info__cat-box--name" id="id-name" name="name" type="text" placeholder="барсик" required>
             </li>
             <li class="cat-info__list-item">
               <label class="cat-info__cat-text cat-info__cat-text--weight" for="id-weight">Вес(кг):*</label>
-              <input class="cat-info__cat-box cat-info__cat-box--weight" id="id-weight" name="weight" type="number" placeholder="7">
+              <input class="cat-info__cat-box cat-info__cat-box--weight" id="id-weight" name="weight" type="text" placeholder="7" required>
             </li>
             <li class="cat-info__list-item">
               <label class="cat-info__cat-text cat-info__cat-text--age" for="id-age">Возраст(лет):</label>
-            <input class="cat-info__cat-box cat-info__cat-box--age" id="id-age" name="age" type="number" placeholder="7">
+            <input class="cat-info__cat-box cat-info__cat-box--age" id="id-age" name="age" type="text" placeholder="7">
             </li>
           </ul>
           <ul class="cat-info__choice-list">
             <li class="cat-info__choice-list-item cat-info__choice-list-item--programm">
-              <input class="cat-info__choice-box" id="id-loss-weight" name="programm" value="loss-weight" type="radio">
+              <input class="cat-info__choice-box" id="id-loss-weight" name="programm" value="loss-weight" type="radio" checked>
               <label class="cat-info__choice-text" for="id-loss-weight">похудение</label>
             </li>
             <li class="cat-info__choice-list-item cat-info__choice-list-item--weight-gain">
@@ -76,11 +76,11 @@
           <ul class="cat-info__owner-list">
             <li class="cat-info__owner-list-item">
               <label class="cat-info__owner-text cat-info__owner-text--email" for="id-email">E-mail:*</label>
-              <input class="cat-info__owner-box cat-info__owner-box--email" id="id-email" name="email" type="email" placeholder="kuklachev@gmail.com">
+              <input class="cat-info__owner-box cat-info__owner-box--email" id="id-email" name="email" type="email" placeholder="kuklachev@gmail.com" required>
             </li>
             <li class="cat-info__owner-list-item">
               <label class="cat-info__owner-text cat-info__owner-text--tel" for="id-tel">Телефон:*</label>
-              <input class="cat-info__owner-box cat-info__owner-box--tel" id="id-tel" name="tel" type="tel" placeholder="8 (960) 900-60-90">
+              <input class="cat-info__owner-box cat-info__owner-box--tel" id="id-tel" name="tel" type="tel" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
           <p class="cat-info__comment-title">Комментарий</p>
@@ -88,7 +88,7 @@
           <p class="cat-info__add-title">Дополнительно</p>
           <ul class="cat-info__add-product-list">
             <li class="cat-info__add-product-list-item">
-              <input class="cat-info__add-product-box" id="id-sugar-free" name="sugar-free" type="checkbox">
+              <input class="cat-info__add-product-box" id="id-sugar-free" name="sugar-free" type="checkbox" checked>
               <label class="cat-info__add-product-text" for="id-sugar-free">сахарозаменитель</label>
             </li>
             <li class="cat-info__add-product-list-item">
@@ -104,8 +104,11 @@
               <label class="cat-info__add-product-text" for="id-vitamin">витамины</label>
             </li>
           </ul>
-          <input class="cat-info__button button button--form" type="submit" value="отправить заявку">
+          <div class="cat-info__button-box">
+            <button class="button button--form" type="submit" name="cat-request" value="отправить заявку">отправить заявку</button>
           <p class="cat-info__must">* — Обязательные поля</p>
+          </div>
+
         </form>
       </section>
     </main>
@@ -147,7 +150,7 @@
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <a class="copyright__logo" href="https://up.htmlacademy.ru/adaptive">
+            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
               <p class="copyright__logo-text">HTML Academy</p>
               <svg class="copyright__logo-image" width="35" height="40" viewbox="0 0 50 50">
                 <use xlink:href="#icon-htmlacademy"></use>

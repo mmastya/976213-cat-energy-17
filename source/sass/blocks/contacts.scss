@@ -55,6 +55,11 @@
     line-height: 20px;
     text-align: right;
   }
+
+  .contacts__text-spb {
+    display: block;
+    padding-top: 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -64,6 +69,7 @@
     padding-right: 80px;
     padding-top: 65px;
     padding-bottom: 61px;
+    z-index: 1;
 
     &--bc-gray {
       background-color: #ffffff;

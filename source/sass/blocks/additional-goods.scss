@@ -4,22 +4,27 @@
   background-color: #ffffff;
 }
 
+.additional-goods__link {
+  text-decoration: none;
+}
+
 .additional-goods__title {
   position: relative;
   margin: 0;
-  padding-top: 29px;
+  padding-top: 27px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 33px;
   font-size: 24px;
   line-height: 24px;
+  font-weight: normal;
   font-family: "Oswald Regular", "Arial", sans-serif;
   color: #111111;
 
   &::after {
     content: "";
     position: absolute;
-    top: 43px;
+    top: 41px;
     right: 0;
     width: 53px;
     height: 3px;
@@ -45,16 +50,16 @@
 
 .additional-goods__gift-image {
   padding-left: 113px;
-  padding-top: 66px;
+  padding-top: 65px;
 }
 
 .additional-goods__gift-promo {
-  width: 160px;
+  width: 161px;
   text-align: center;
   margin: 0;
-  padding-left: 65px;
-  padding-top: 42px;
-  padding-bottom: 58px;
+  padding-left: 59px;
+  padding-top: 59px;
+  padding-bottom: 42px;
   font-size: 16px;
   line-height: 20px;
   font-family: "Arial Regular", "Arial", sans-serif;
@@ -69,7 +74,7 @@
   .additional-goods__title {
     padding-top: 68px;
     padding-left: 67px;
-    padding-bottom: 81px;
+    padding-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
 
@@ -106,14 +111,14 @@
   }
 
   .additional-goods__gift-image {
-    margin-top: 66px;
+    margin-top: 65px;
     padding-left: 91px;
     padding-top: 0;
-    padding-bottom: 70px;
+    padding-bottom: 75px;
   }
 
   .additional-goods__gift-promo {
-    width: 160px;
+    width: 161px;
     text-align: left;
     padding-left: 277px;
     padding-top: 72px;
@@ -136,8 +141,8 @@
 
     &::after {
       top: 100px;
-      right: -110px;
-      width: 958px;
+      right: -40px;
+      width: 899px;
     }
 
     &::before {
@@ -172,15 +177,14 @@
   }
 
   .additional-goods__gift-promo {
-    width: 160px;
+    width: 161px;
     text-align: center;
-    padding-left: 79px;
+    padding-left: 71px;
     padding-top: 0;
     padding-bottom: 40px;
   }
 
   .additional-goods__button {
-    margin-left: 36px;
     margin-top: 14px;
     margin-bottom: 17px;
   }

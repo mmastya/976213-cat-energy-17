@@ -1,7 +1,5 @@
 .copyright {
-  height: 78px;
-  padding-right: 20px;
-  padding-left: 20px;
+  width: 280px;
   background-color: #f2f2f2;
 }
 
@@ -46,17 +44,18 @@
 
   .copyright__logo-text {
     margin-right: 0;
+    padding-top: 2px;
   }
 
   .copyright__logo-image {
-    margin-left: 14px;
-    padding-top: 18px;
+    margin-left: 16px;
+    padding-top: 8px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .copyright {
-    width: 186px;
+    width: 188px;
   }
 
   .copyright__logo-text {

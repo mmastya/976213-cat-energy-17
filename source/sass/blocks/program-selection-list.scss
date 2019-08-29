@@ -1,5 +1,6 @@
 .program-selection-list {
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
   list-style: none;
@@ -40,7 +41,7 @@
   }
 
   &--slim-size {
-    top: -5px;
+    top: -3px;
     width: 51px;
     height: 52px;
   }
@@ -48,7 +49,7 @@
 
 .program-selection-list__name {
   margin-top: 29px;
-  margin-bottom: 29px;
+  margin-bottom: 31px;
   font-size: 24px;
   line-height: 37px;
   font-family: "Oswald Regular", "Arial", sans-serif;
@@ -75,11 +76,16 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
+.program-selection-list__toggle {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .program-selection-list__toggle-name {
   text-align: left;
   width: 240px;
   height: 16px;
-  padding: 20px 0 37px 21px;
+  padding: 20px 0 20px 21px;
   font-size: 16px;
   line-height: 16px;
   font-family: "Oswald Regular", "Arial", sans-serif;
@@ -192,7 +198,7 @@
     height: 20px;
     margin: 0;
     padding-left: 52px;
-    padding-bottom: 81px;
+    padding-bottom: 63px;
     font-size: 20px;
     line-height: 20px;
     background-position-x: 184px;
@@ -200,7 +206,7 @@
 
     &--pro {
       background-position-x: 178px;
-      background-position-y: 20px;
+      background-position-y: 18px;
     }
 
     &:hover {
@@ -223,7 +229,7 @@
     display: flex;
     width: 1220px;
     padding: 0;
-    padding-top: 135px;
+    padding-top: 304px;
   }
 
   .program-selection-list__item {
@@ -237,7 +243,7 @@
   }
 
   .program-selection-list__image-wrapper {
-    top: 45px;
+    top: 47px;
     left: 29px;
     width: 100px;
     height: 100px;
@@ -246,7 +252,7 @@
     border-radius: 50%;
 
     &--pro {
-      top: 45px;
+      top: 47px;
       left: 28px;
     }
   }
@@ -258,12 +264,12 @@
     font-size: 36px;
 
     &--slim-size {
-      padding-top: 74px;
+      padding-top: 76px;
       padding-left: 213px;
     }
 
     &--pro-size {
-      padding-top: 75px;
+      padding-top: 76px;
       padding-left: 213px;
     }
   }
@@ -272,7 +278,7 @@
     width: 462px;
     margin: 0;
     padding-left: 53px;
-    padding-top: 47px;
+    padding-top: 49px;
     padding-bottom: 11px;
     font-size: 16px;
     line-height: 24px;
@@ -283,7 +289,7 @@
     height: 20px;
     margin: 0;
     padding-left: 52px;
-    padding-bottom: 83px;
+    padding-bottom: 61px;
     font-size: 20px;
     line-height: 20px;
     background-position-x: 184px;
@@ -317,15 +323,19 @@
     &--pro-size {
       width: 134px;
       height: 117px;
-      margin-left: -9px;
-      margin-top: 9px;
+      left: 0;
+      top: 0;
+      margin-left: -17px;
+      margin-top: -19px;
     }
 
     &--slim-size {
       width: 101px;
       height: 111px;
-      margin-top: -6px;
-      margin-left: -3px;
+      top: 0;
+      left: 0;
+      margin-left: -1px;
+      margin-top: -12px;
     }
   }
 }

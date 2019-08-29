@@ -23,11 +23,27 @@
 
 @media (min-width: $tablet-width) {
   .info-list {
-    width: 672px;
-    margin-top: -31px;
-    padding-top: 12px;
-    padding-bottom: 20px;
-    padding-left: 442px;
+    width: 229px;
+    margin-top: 0;
+    padding-top: 25px;
+    padding-bottom: 18px;
+    padding-left: 0;
+    padding-right: 39px;
+
+    &--water {
+      width: 167px;
+      padding-left: 0;
+    }
+
+    &--milk {
+      width: 149px;
+      padding-left: 0;
+    }
+
+    &--vitamin {
+      width: 224px;
+      padding-left: 0;
+    }
   }
 
   .info-list__count {
@@ -45,11 +61,11 @@
 
 @media (min-width: $desktop-width) {
   .info-list {
-    width: 292px;
+    width: 325px;
     margin-top: 12px;
     padding-top: 13px;
     padding-bottom: 20px;
-    padding-left: 162px;
+    padding-left: 90px;
   }
 
   .info-list__count {

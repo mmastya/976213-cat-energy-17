@@ -114,7 +114,7 @@
 
 .cat-info__owner-list-item {
   display: flex;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
 }
 
 .cat-info__owner-text {
@@ -164,7 +164,7 @@
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-size: 17px 13px;
-    background-position: 187px 14px;
+    background-position: 187px 50%;
 
     &:active,
     &:focus {
@@ -181,7 +181,7 @@
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-size: 20px 20px;
-    background-position: 171px 11px;
+    background-position: 171px 50%;
 
     &:active,
     &:focus {
@@ -198,7 +198,6 @@
   margin: 0;
   padding-top: 20px;
   padding-left: 62px;
-  padding-bottom: 60px;
   font-size: 14px;
   line-height: 16px;
   font-family: "Arial Regular", "Arial", sans-serif;
@@ -248,7 +247,7 @@
 }
 
 .cat-info__choice-list-item {
-  padding-top: 21px;
+  padding-top: 19px;
   padding-left: 19px;
 
   &--weight-gain {
@@ -257,7 +256,7 @@
 
   &--help {
     padding-top: 12px;
-    padding-bottom: 15px;
+    padding-bottom: 22px;
   }
 }
 
@@ -273,9 +272,9 @@
   &::before {
     content: "";
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-right: 14px;
+    width: 28px;
+    height: 28px;
+    margin-right: 16px;
     vertical-align: middle;
     border: 1px solid #cecece;
     border-radius: 50%;
@@ -284,8 +283,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 9px;
-    left: 11px;
+    top: 10px;
+    left: 9px;
     display: none;
     width: 12px;
     height: 12px;
@@ -417,6 +416,7 @@
 .cat-info__button-box {
   display: flex;
   flex-direction: column;
+  padding-bottom: 32px;
 }
 
 @media (min-width: $tablet-width) {
@@ -566,13 +566,13 @@
     &--email {
       flex: 13;
       background-size: 17px 13px;
-      background-position: 512px 17px;
+      background-position: 512px 50%;
     }
 
     &--tel {
       flex: 11;
       background-size: 20px 20px;
-      background-position: 500px 14px;
+      background-position: 500px 50%;
     }
   }
 
@@ -775,13 +775,13 @@
     &--email {
       flex: 11;
       background-size: 17px 13px;
-      background-position: 447px 20px;
+      background-position: 447px 50%;
     }
 
     &--tel {
       flex: 9;
       background-size: 20px 20px;
-      background-position: 431px 17px;
+      background-position: 431px 50%;
     }
   }
 
@@ -838,6 +838,6 @@
   .cat-info__button-box {
     display: flex;
     flex-direction: row;
-    padding-bottom: 70px;
+    padding-bottom: 81px;
   }
 }

@@ -1,24 +1,32 @@
 .example {
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
   margin: 0 auto;
   background-color: #f2f2f2;
 }
 
-.example__title {
-  margin: 0;
+.example__intro {
+  width: 280px;
+  margin: 0 auto;
   padding-left: 20px;
+  padding-right: 20px;
   padding-top: 17px;
+}
+
+.example__title {
+  width: 280px;
+  margin: 0 auto;
   font-size: 36px;
   line-height: 60px;
+  font-weight: normal;
   font-family: "Oswald Regular", "Arial", sans-serif;
   color: #111111;
 }
 
 .example__text {
+  width: 278px;
   margin: 0;
   padding-top: 23px;
-  padding-left: 21px;
-  padding-right: 20px;
   font-size: 14px;
   line-height: 18px;
   font-family: "Arial Regular", "Arial", sans-serif;
@@ -27,9 +35,9 @@
 
 .example__cost {
   margin: 0;
-  padding-left: 68px;
+  padding-left: 48px;
   padding-bottom: 34px;
-  padding-top: 22px;
+  padding-top: 41px;
   font-size: 14px;
   line-height: 20px;
   font-family: "Oswald Regular", "Arial", sans-serif;
@@ -38,19 +46,22 @@
 }
 
 .example__cat {
+  width: 280px;
+  margin: 0 auto;
   padding-bottom: 21px;
 }
 
 .example__before-after-list {
   display: flex;
   margin: 0;
-  padding-left: 65px;
+  padding-left: 45px;
   padding-right: 57px;
-  padding-top: 12px;
+  padding-top: 42px;
   list-style: none;
 }
 
 .example__before-after-list-item {
+  position: relative;
   margin-right: 17px;
 
   &:nth-child(3) {
@@ -67,24 +78,22 @@
 }
 
 .example__after-slider {
-  position: relative;
   width: 84px;
   height: 12px;
   border: 1px solid #d9d9d9;
   border-radius: 50px;
   background-color: #ffffff;
   margin-top: 19px;
+}
 
-  &::before {
-    content: "";
-    top: 3px;
-    left: 7px;
-    position: absolute;
-    width: 35px;
-    height: 6px;
-    border-radius: 50px;
-    background-color: #68b738;
-  }
+.example__after-runner {
+  position: absolute;
+  top: 23px;
+  left: 6px;
+  width: 35px;
+  height: 6px;
+  border-radius: 50px;
+  background-color: #68b738;
 }
 
 .example__after-text {
@@ -97,15 +106,21 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    width: 768px;
+    min-width: 768px;
+    background-color: #ffffffff;
   }
 
   .example__intro {
+    width: 768px;
     padding-bottom: 235px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
     background-color: #ffffffff;
   }
 
   .example__title {
+    width: 768px;
     padding-left: 30px;
     padding-top: 44px;
     font-size: 60px;
@@ -115,6 +130,7 @@
   }
 
   .example__text {
+    width: 696px;
     padding-top: 63px;
     padding-left: 30px;
     padding-right: 37px;
@@ -135,12 +151,20 @@
   .example__image {
     width: 686px;
     height: 520px;
-    margin-left: 47px;
+    margin-left: 46px;
     margin-top: -171px;
   }
 
   .example__cat {
+    min-width: 768px;
+    width: 100%;
     padding-bottom: 49px;
+    background-color: #eaeaea;
+  }
+
+  .example__cat-wrapper {
+    width: 768px;
+    margin: 0 auto;
   }
 
   .example__before-after-list {
@@ -186,24 +210,23 @@
     border-radius: 50px;
     background-color: #dcdcdc;
     margin-top: 26px;
+  }
 
-    &::before {
-      content: "";
-      top: -13px;
-      left: 199px;
-      position: absolute;
-      width: 32px;
-      height: 32px;
-      border: 1px solid #cdcdcd;
-      border-radius: 50px;
-      background-color: #ffffff;
-    }
+  .example__after-runner {
+    position: absolute;
+    top: 14px;
+    left: 199px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50px;
+    background-color: #ffffff;
 
     &::after {
       content: "";
-      top: 0;
-      left: 212px;
       position: absolute;
+      top: 12px;
+      left: 12px;
       width: 8px;
       height: 8px;
       border-radius: 50px;
@@ -215,23 +238,42 @@
 @media (min-width: $desktop-width) {
   .example {
     display: flex;
-    width: 1440px;
-    margin-left: -110px;
+    flex-wrap: wrap;
+    min-width: 1300px;
+    margin-left: 0;
+    background-color: #ffffffff;
+  }
+
+  .example__wrapper-desktop {
+    display: flex;
+    min-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+  }
+
+  .example__center {
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
   }
 
   .example__intro {
     width: 500px;
     padding-bottom: 0;
+    padding-right: 0;
     background-color: #f2f2f2;
   }
 
   .example__cat {
     width: 686px;
+    padding-bottom: 51px;
+    background-color: #f2f2f2;
   }
 
   .example__title {
-    width: 1440px;
-    padding-left: 110px;
+    width: 1300px;
+    padding-left: 40px;
     padding-top: 24px;
     padding-bottom: 76px;
     border-top: none;
@@ -241,14 +283,14 @@
   .example__text {
     width: 432px;
     padding-top: 72px;
-    padding-left: 110px;
+    padding-left: 32px;
     padding-right: 37px;
   }
 
   .example__cost {
     width: 353px;
-    margin-top: -27px;
-    padding-left: 83px;
+    margin-top: -29px;
+    padding-left: 6px;
     padding-bottom: 0;
   }
 
@@ -260,15 +302,15 @@
   .example__image {
     width: 686px;
     height: 520px;
-    margin-left: 180px;
-    margin-top: -34px;
+    margin-left: 88px;
+    margin-top: -193px;
   }
 
   .example__before-after-list {
-    padding-left: 259px;
+    padding-left: 166px;
     padding-right: 96px;
     padding-top: 0;
-    margin-top: 20px;
+    margin-top: 17px;
   }
 
   .example__before-after-list-item {

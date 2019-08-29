@@ -29,12 +29,15 @@
 @media (min-width: $tablet-width) {
   .product-list {
     padding-left: 30px;
-    padding-bottom: 70px;
+    padding-bottom: 69px;
   }
 
   .product-list__item {
-    width: 708px;
-    padding-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 707px;
+    padding-bottom: 29px;
     border-top: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
     border-left: 1px solid #cdcdcd;
@@ -45,8 +48,8 @@
   }
 
   .product-list__name {
-    padding-left: 39px;
-    padding-top: 26px;
+    padding-left: 38px;
+    padding-top: 24px;
     font-size: 20px;
     line-height: 20px;
   }

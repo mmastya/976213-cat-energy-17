@@ -40,7 +40,7 @@
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 66px;
-    padding-bottom: 55px;
+    padding-bottom: 57px;
   }
 
   .contacts__title {
@@ -52,6 +52,7 @@
   .contacts__text {
     width: 177px;
     margin-left: 328px;
+    margin-top: -3px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
@@ -59,18 +60,20 @@
 
   .contacts__text-spb {
     display: block;
-    padding-top: 17px;
+    padding-top: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
     width: 414px;
-    padding-left: 80px;
+    z-index: 1;
+    margin-top: 96px;
+    margin-left: 0;
+    padding-left: 75px;
     padding-right: 80px;
     padding-top: 65px;
     padding-bottom: 59px;
-    z-index: 1;
 
     &--bc-gray {
       background-color: #ffffff;
@@ -85,7 +88,7 @@
 
   .contacts__text {
     width: 177px;
-    margin-left: 128px;
+    margin-left: 130px;
     font-size: 16px;
     line-height: 20px;
     text-align: left;

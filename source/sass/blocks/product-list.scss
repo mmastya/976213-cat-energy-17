@@ -8,7 +8,7 @@
 
 .product-list__item {
   width: 280px;
-  padding-bottom: 16px;
+  padding-bottom: 15px;
   border-top: 1px solid #cdcdcd;
 
   &:last-child {
@@ -37,7 +37,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 707px;
-    padding-bottom: 29px;
+    padding-bottom: 28px;
     border-top: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
     border-left: 1px solid #cdcdcd;
@@ -63,7 +63,7 @@
 
   .product-list__item {
     display: flex;
-    width: 894px;
+    width: 896px;
     padding-bottom: 0;
     border-top: 1px solid #cdcdcd;
     border-right: none;
@@ -76,7 +76,7 @@
 
   .product-list__name {
     width: 160px;
-    padding-left: 0;
+    padding-left: 1px;
     padding-top: 24px;
   }
 }

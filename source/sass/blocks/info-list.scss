@@ -1,16 +1,29 @@
 .info-list {
-  width: 280px;
-  padding-top: 10px;
-  padding-bottom: 12px;
+  display: flex;
+  width: 283px;
+  padding-top: 13px;
+  padding-bottom: 16px;
   background-color: white;
 }
 
 .info-list__count {
+  margin-right: 128px;
   font-size: 14px;
   line-height: 14px;
   font-family: "Arial Regular", "Arial", sans-serif;
   color: #444444;
-  text-align: left;
+
+  &--water {
+    margin-right: 194px;
+  }
+
+  &--milk {
+    margin-right: 201px;
+  }
+
+  &--vitamin {
+    margin-right: 136px;
+  }
 }
 
 .info-list__cost {
@@ -18,60 +31,92 @@
   line-height: 14px;
   font-family: "Arial Regular", "Arial", sans-serif;
   color: #444444;
-  text-align: right;
 }
 
 @media (min-width: $tablet-width) {
   .info-list {
-    width: 229px;
+    width: 228px;
     margin-top: 0;
-    padding-top: 25px;
-    padding-bottom: 18px;
+    padding-top: 28px;
+    padding-bottom: 22px;
     padding-left: 0;
-    padding-right: 39px;
+    padding-right: 36px;
 
     &--water {
-      width: 167px;
-      padding-left: 0;
+      width: 161px;
     }
 
     &--milk {
-      width: 149px;
-      padding-left: 0;
+      width: 143px;
     }
 
     &--vitamin {
-      width: 224px;
-      padding-left: 0;
+      width: 218px;
     }
   }
 
   .info-list__count {
+    margin-right: 52px;
     font-size: 16px;
     line-height: 20px;
-    text-align: left;
+
+    &--water {
+      margin-right: 61px;
+    }
+
+    &--milk {
+      margin-right: 51px;
+    }
+
+    &--vitamin {
+      margin-right: 51px;
+    }
   }
 
   .info-list__cost {
     font-size: 16px;
     line-height: 20px;
-    text-align: right;
   }
 }
 
 @media (min-width: $desktop-width) {
   .info-list {
-    width: 325px;
-    margin-top: 12px;
+    width: 326px;
+    margin-top: 15px;
     padding-top: 13px;
     padding-bottom: 20px;
-    padding-left: 90px;
+    padding-right: 0;
+    padding-left: 164px;
+
+    &--water {
+      width: 324px;
+    }
+
+    &--milk {
+      width: 324px;
+    }
+
+    &--vitamin {
+      width: 324px;
+    }
   }
 
   .info-list__count {
+    margin-right: 113px;
     font-size: 16px;
     line-height: 20px;
-    text-align: left;
+
+    &--water {
+      margin-right: 179px;
+    }
+
+    &--milk {
+      margin-right: 196px;
+    }
+
+    &--vitamin {
+      margin-right: 121px;
+    }
   }
 
   .info-list__cost {
